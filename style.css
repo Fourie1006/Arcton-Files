@@ -372,3 +372,30 @@ body{
   text-transform: uppercase;
   font-size: 12px;
 }
+.subscribe__form { display: grid; gap: 12px; margin-top: 12px; }
+
+.subscribe__row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+}
+
+.subscribe__form input[type="email"]{
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(0,0,0,0.35);
+  color: rgba(255,255,255,0.92);
+  outline: none;
+}
+
+.subscribe__form input::placeholder { color: rgba(255,255,255,0.45); }
+
+.subscribe__consent {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.subscribe__consent input { transform: translateY(1px); }

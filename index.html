@@ -143,19 +143,39 @@
     </section>
 
     <section id="subscribe" class="subscribe">
-  <h2>Request Access</h2>
-  <p>Receive classified excerpts, leaked dialogue, and Arcton transmissions.</p>
-
   <form
-    action="https://buttondown.email/api/emails/embed-subscribe/arctonfiles"
-    method="post"
-    target="popupwindow"
-    onsubmit="window.open('https://buttondown.email/arctonfiles', 'popupwindow')"
-    class="subscribe-form"
-  >
-    <input type="email" name="email" placeholder="Enter secure email address" required />
-    <button type="submit">Request Access</button>
-  </form>
+  name="newsletter"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  class="subscribe__form"
+>
+  <!-- Required hidden field for Netlify -->
+  <input type="hidden" name="form-name" value="newsletter" />
+
+  <!-- Honeypot (spam trap) -->
+  <p style="display:none;">
+    <label>Don’t fill this out: <input name="bot-field" /></label>
+  </p>
+
+  <div class="subscribe__row">
+    <input
+      type="email"
+      name="email"
+      placeholder="your@email.com"
+      required
+      autocomplete="email"
+    />
+    <button type="submit" class="btn">Request Access</button>
+  </div>
+
+  <label class="subscribe__consent muted">
+    <input type="checkbox" name="consent" required />
+    I agree to receive Arcton Files updates.
+  </label>
+
+  <p class="mono tiny">ARCHON NOTICE: transmissions may be delayed by security protocols.</p>
+</form>
 </section>
 
     <footer class="footer">
