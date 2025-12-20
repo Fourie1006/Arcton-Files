@@ -143,20 +143,20 @@
     </section>
 
     <section id="subscribe" class="subscribe">
-      <div class="wrap">
-        <div class="card subscribe__card">
-          <h2>Subscribe</h2>
-          <p class="muted">
-            Add an email signup later (ConvertKit / Mailchimp). For now, use a simple “follow” CTA.
-          </p>
-          <div class="subscribe__actions">
-            <a class="btn" href="#" onclick="alert('Add your newsletter link here (ConvertKit/Mailchimp).'); return false;">Add Newsletter Link</a>
-            <a class="btn btn--ghost" href="#" onclick="navigator.clipboard.writeText(window.location.href); alert('Link copied!'); return false;">Copy Site Link</a>
-          </div>
-          <p class="mono tiny">NOTE: Replace buttons with your real links when ready.</p>
-        </div>
-      </div>
-    </section>
+  <h2>Request Access</h2>
+  <p>Receive classified excerpts, leaked dialogue, and Arcton transmissions.</p>
+
+  <form
+    action="https://buttondown.email/api/emails/embed-subscribe/arctonfiles"
+    method="post"
+    target="popupwindow"
+    onsubmit="window.open('https://buttondown.email/arctonfiles', 'popupwindow')"
+    class="subscribe-form"
+  >
+    <input type="email" name="email" placeholder="Enter secure email address" required />
+    <button type="submit">Request Access</button>
+  </form>
+</section>
 
     <footer class="footer">
       <div class="wrap footer__inner">
