@@ -37,3 +37,14 @@ pills.forEach(p => {
 });
 
 applyFilters();
+
+// -----------------------------
+// Netlify form success handling
+// -----------------------------
+(() => {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("success") === "1") {
+    const el = document.getElementById("subscribe-success");
+    if (el) el.style.display = "block";
+  }
+})();

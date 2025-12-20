@@ -143,39 +143,57 @@
     </section>
 
     <section id="subscribe" class="subscribe">
-  <form
-  name="newsletter"
-  method="POST"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
-  class="subscribe__form"
->
-  <!-- Required hidden field for Netlify -->
-  <input type="hidden" name="form-name" value="newsletter" />
+  <section id="subscribe" class="subscribe">
+  <div class="wrap">
+    <div class="card subscribe__card">
+      <h2>Subscribe</h2>
+      <p class="muted">
+        Get new “files” as they leak. No spoilers. Just fragments.
+      </p>
 
-  <!-- Honeypot (spam trap) -->
-  <p style="display:none;">
-    <label>Don’t fill this out: <input name="bot-field" /></label>
-  </p>
+      <!-- Netlify Form -->
+      <form
+        name="subscribe"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        action="/?success=1#subscribe"
+        class="subscribe__form"
+      >
+        <!-- REQUIRED for Netlify to recognize the form -->
+        <input type="hidden" name="form-name" value="subscribe" />
 
-  <div class="subscribe__row">
-    <input
-      type="email"
-      name="email"
-      placeholder="your@email.com"
-      required
-      autocomplete="email"
-    />
-    <button type="submit" class="btn">Request Access</button>
+        <!-- Honeypot (hidden) -->
+        <p style="display:none;">
+          <label>Don’t fill this out: <input name="bot-field" /></label>
+        </p>
+
+        <div class="subscribe__row">
+          <input
+            type="email"
+            name="email"
+            placeholder="your@email.com"
+            required
+            class="subscribe__input"
+          />
+          <button type="submit" class="btn">Request Access</button>
+        </div>
+
+        <label class="mono tiny" style="display:block; margin-top:10px;">
+          <input type="checkbox" name="consent" required />
+          I agree to receive Arcton Files updates.
+        </label>
+
+        <p id="subscribe-success" class="mono tiny" style="display:none; margin-top:10px;">
+          ACCESS GRANTED. Check your inbox.
+        </p>
+      </form>
+
+      <p class="mono tiny" style="margin-top:10px;">
+        ARCHON NOTICE: transmissions may be delayed by security protocols.
+      </p>
+    </div>
   </div>
-
-  <label class="subscribe__consent muted">
-    <input type="checkbox" name="consent" required />
-    I agree to receive Arcton Files updates.
-  </label>
-
-  <p class="mono tiny">ARCHON NOTICE: transmissions may be delayed by security protocols.</p>
-</form>
 </section>
 
     <footer class="footer">
