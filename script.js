@@ -48,3 +48,15 @@ applyFilters();
     if (el) el.style.display = "block";
   }
 })();
+
+const form = document.getElementById("subscribe-form");
+const success = document.getElementById("subscribe-success");
+
+if (form) {
+  form.addEventListener("submit", function () {
+    setTimeout(() => {
+      success.classList.remove("hidden");
+      form.reset();
+    }, 300);
+  });
+}
