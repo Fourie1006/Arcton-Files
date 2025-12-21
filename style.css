@@ -36,6 +36,8 @@ body{
 .muted{ color: var(--muted); }
 .tiny{ font-size: 12px; }
 
+.hidden { display: none !important; }
+
 .topbar{
   position: sticky;
   top:0;

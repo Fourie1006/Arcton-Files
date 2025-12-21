@@ -41,22 +41,34 @@ applyFilters();
 // -----------------------------
 // Netlify form success handling
 // -----------------------------
-(() => {
-  const params = new URLSearchParams(window.location.search);
-  if (params.get("success") === "1") {
-    const el = document.getElementById("subscribe-success");
-    if (el) el.style.display = "block";
-  }
-})();
-
 const form = document.getElementById("subscribe-form");
 const success = document.getElementById("subscribe-success");
 
+if (success) success.classList.add("hidden");
+
 if (form) {
-  form.addEventListener("submit", function () {
-    setTimeout(() => {
-      success.classList.remove("hidden");
-      form.reset();
-    }, 300);
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      });
+
+      if (res.ok) {
+        success.classList.remove("hidden");
+        form.reset();
+      } else {
+        alert("ACCESS DENIED. Please try again.");
+      }
+    } catch (err) {
+      alert("TRANSMISSION FAILED. Please try again.");
+    }
   });
+}
+
 }
