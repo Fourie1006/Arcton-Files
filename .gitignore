@@ -1,1 +1,5 @@
 .DS_Store
+
+# local backups
+backups/
+.DS_Store
