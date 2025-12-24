@@ -1,63 +1,52 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Subscribe — Arcton Files</title>
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
-</head>
-<body>
-<header class="topbar">
-  <div class="wrap topbar__inner">
-    <a class="brand" href="./index.html">
-      <span class="brand__sigil">◭</span><span class="brand__name">ARCTON FILES</span><span class="brand__tag">PUBLIC ACCESS</span>
-    </a>
-    <nav class="nav"><a href="./index.html#archive">Archive</a><a href="./subscribe.html">Subscribe</a></nav>
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Subscribe — Arcton Files</title>
+<link rel="stylesheet" href="./style.css">
+<script src="./script.js" defer></script>
+</head><body>
+<header class="topbar"><div class="wrap topbar__inner">
+  <a class="brand" href="./index.html"><span class="brand__sigil">◭</span><span class="brand__name">ARCTON FILES</span><span class="brand__tag">PUBLIC ACCESS</span></a>
+  <nav class="nav"><a href="./index.html#archive">Archive</a><a href="./subscribe.html">Subscribe</a></nav>
+</div></header>
+
+<main class="archive"><div class="wrap">
+  <div class="sectionhead"><h2 class="mono">Subscribe</h2>
+    <p class="muted mono">You are about to receive classified material from the Arcton Institute.</p></div>
+
+  <div class="card">
+    <p id="ok"  class="mono tiny" style="display:none; color: var(--ok); margin:0;">ACCESS GRANTED. Check your inbox.</p>
+    <p id="err" class="mono tiny" style="display:none; color: var(--danger); margin:0;">TRANSMISSION FAILED. Please try again.</p>
+
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+    <form id="subscribeForm" class="form"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSfbnR9pn613Ce-UmKsrE8a-qNe-m0gLaE-HwvhadySY0CfYAQ/formResponse"
+          method="POST" target="hidden_iframe">
+      <div class="field"><label>First name</label>
+        <input name="entry.2124893583" type="text" placeholder="Elena" autocomplete="given-name" />
+      </div>
+
+      <div class="field"><label>Email</label>
+        <input name="entry.434112051" type="email" placeholder="your@email.com" required autocomplete="email" />
+      </div>
+
+      <label class="consent">
+        <!-- VALUE must match your Form option exactly -->
+        <input name="entry.1579899643" type="checkbox"
+               value="I agree to receive Arcton Files transmissions" required />
+        <span>I agree to receive Arcton Files updates.</span>
+      </label>
+
+      <!-- harmless helpers for multi-page/validation forms -->
+      <input type="hidden" name="fvv" value="1">
+      <input type="hidden" name="pageHistory" value="0">
+      <input type="hidden" name="fbzx" value="-1">
+
+      <div class="hero__cta">
+        <button id="submitBtn" class="btn" type="submit">Request Access</button>
+        <a class="btn btn--ghost" href="./index.html#archive">Back to Archive</a>
+      </div>
+    </form>
   </div>
-</header>
-
-<main class="archive">
-  <div class="wrap">
-    <div class="sectionhead">
-      <h2 class="mono">Subscribe</h2>
-      <p class="muted mono">You are about to receive classified material from the Arcton Institute.</p>
-    </div>
-
-    <div class="card">
-      <p class="mono muted" style="margin-top:0"><strong>Transmission warning:</strong> early files & tools. No spoilers. Just signals.</p>
-
-      <p id="ok"  class="mono tiny"  style="display:none; color: var(--ok); margin:0;">ACCESS GRANTED. Check your inbox.</p>
-      <p id="err" class="mono tiny"  style="display:none; color: var(--danger); margin:0;">TRANSMISSION FAILED. Please try again.</p>
-
-      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-
-      <form id="subscribeForm" class="form"
-            action="./ocean.html"
-            method="POST" target="hidden_iframe">
-        <div class="field">
-          <label>First name</label>
-          <input id="firstName" name="entry.2124893583" type="text" placeholder="Elena" autocomplete="given-name" />
-        </div>
-
-        <div class="field">
-          <label>Email</label>
-          <input id="email" name="entry.434112051" type="email" placeholder="your@email.com" required autocomplete="email" />
-        </div>
-
-        <label class="consent">
-          <input id="consent" name="entry.1579899643" type="checkbox"
-                 value="I agree to receive Arcton Files transmissions" required />
-          <span>I agree to receive Arcton Files updates.</span>
-        </label>
-
-        <div class="hero__cta">
-          <button id="submitBtn" class="btn" type="submit">Request Access</button>
-          <a class="btn btn--ghost" href="./index.html#archive">Back to Archive</a>
-        </div>
-      </form>
-    </div>
-  </div>
-</main>
-</body>
-</html>
+</div></main>
+</body></html>
