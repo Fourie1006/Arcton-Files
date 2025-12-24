@@ -3,73 +3,53 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Request Access — Arcton Files</title>
-  <meta name="description" content="Request access to Arcton Files transmissions." />
+  <title>Subscribe — Arcton Files</title>
   <link rel="stylesheet" href="./style.css">
   <script src="./script.js" defer></script>
 </head>
 <body>
-
 <header class="topbar">
   <div class="wrap topbar__inner">
     <a class="brand" href="./index.html">
-      <span class="brand__sigil">◭</span>
-      <span class="brand__name">ARCTON FILES</span>
-      <span class="brand__tag">PUBLIC ACCESS</span>
+      <span class="brand__sigil">◭</span><span class="brand__name">ARCTON FILES</span><span class="brand__tag">PUBLIC ACCESS</span>
     </a>
-    <nav class="nav">
-      <a href="./index.html#archive">Archive</a>
-      <a href="./subscribe.html">Subscribe</a>
-    </nav>
+    <nav class="nav"><a href="./index.html#archive">Archive</a><a href="./subscribe.html">Subscribe</a></nav>
   </div>
 </header>
 
 <main class="archive">
   <div class="wrap">
     <div class="sectionhead">
-      <h2 class="mono">REQUEST ACCESS</h2>
-      <p class="muted mono">Complete intake. Your channel will be authorised for transmissions.</p>
+      <h2 class="mono">Subscribe</h2>
+      <p class="muted mono">You are about to receive classified material from the Arcton Institute.</p>
     </div>
 
     <div class="card">
-      <p class="mono muted" style="margin-top:0">
-        You’ll receive FILE drops and tools before public release. No spoilers. Just signals.
-      </p>
+      <p class="mono muted" style="margin-top:0"><strong>Transmission warning:</strong> early files & tools. No spoilers. Just signals.</p>
 
-      <p id="ok" class="mono tiny" style="display:none; color: var(--ok); margin:0;">
-        ACCESS GRANTED. Check your inbox.
-      </p>
-      <p id="err" class="mono tiny" style="display:none; color: var(--danger); margin:0;">
-        TRANSMISSION FAILED. Please try again.
-      </p>
+      <p id="ok"  class="mono tiny"  style="display:none; color: var(--ok); margin:0;">ACCESS GRANTED. Check your inbox.</p>
+      <p id="err" class="mono tiny"  style="display:none; color: var(--danger); margin:0;">TRANSMISSION FAILED. Please try again.</p>
 
-      <!-- swallow the Google Form redirect -->
       <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
-      <form class="form"
+      <form id="subscribeForm" class="form"
             action="https://docs.google.com/forms/d/e/1FAIpQLSfbnR9pn613Ce-UmKsrE8a-qNe-m0gLaE-HwvhadySY0CfYAQ/formResponse"
-            method="POST"
-            target="hidden_iframe"
-            onsubmit="window.__submitting = true;">
+            method="POST" target="hidden_iframe">
         <div class="field">
           <label>First name</label>
-          <input id="firstName" type="text" name="entry.2124893583" placeholder="Elena" autocomplete="given-name" />
+          <input id="firstName" name="entry.2124893583" type="text" placeholder="Elena" autocomplete="given-name" />
         </div>
 
         <div class="field">
           <label>Email</label>
-          <input id="email" type="email" name="entry.434112051" placeholder="your@email.com" required autocomplete="email" />
+          <input id="email" name="entry.434112051" type="email" placeholder="your@email.com" required autocomplete="email" />
         </div>
 
         <label class="consent">
-          <input id="consent" type="checkbox" required name="entry.1579899643" value="Yes" />
+          <input id="consent" name="entry.1579899643" type="checkbox"
+                 value="I agree to receive Arcton Files transmissions" required />
           <span>I agree to receive Arcton Files updates.</span>
         </label>
-
-        <!-- required hidden fields -->
-        <input type="hidden" name="fvv" value="1">
-        <input type="hidden" name="fbzx" value="">
-        <input type="hidden" name="pageHistory" value="0">
 
         <div class="hero__cta">
           <button id="submitBtn" class="btn" type="submit">Request Access</button>
@@ -79,34 +59,5 @@
     </div>
   </div>
 </main>
-
-<script>
-(function(){
-  var btn = document.getElementById("submitBtn");
-  var ok = document.getElementById("ok");
-  var err = document.getElementById("err");
-
-  // Success when hidden iframe loads after POST
-  document.getElementById('hidden_iframe').addEventListener('load', function(){
-    if (window.__submitting) {
-      window.__submitting = false;
-      ok.style.display = "block";
-      btn.textContent = "Access Granted";
-      btn.disabled = true;
-    }
-  });
-
-  // Light client validation message
-  btn.addEventListener("click", function(){
-    ok.style.display = "none"; err.style.display = "none";
-    var em = document.getElementById("email").value.trim();
-    if (!/.+@.+\..+/.test(em)) {
-      err.textContent = "Enter a valid email.";
-      err.style.display = "block";
-    }
-  });
-})();
-</script>
-
 </body>
 </html>
