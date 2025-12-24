@@ -158,57 +158,40 @@
         Please ensure your archives are encrypted.
       </p>
 
-    <div class="card card--flat">
-  <p class="mono" style="margin:0">
-    <strong>TRANSMISSION WARNING:</strong><br>
-    Subscribers receive restricted “files” first — dialogue fragments, tools, and sealed logs.<br>
-    No spoilers. Just signals.
-  </p>
-</div>
-
-<form
-  class="subscribe__form"
-  name="arcton-subscribe"
-  method="POST"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
-  id="subscribe-form"
->
-        <!-- Netlify required hidden input -->
-        <input type="hidden" name="form-name" value="arcton-subscribe" />
-
-        <!-- Honeypot -->
-        <p class="hidden">
-          <label>
-            Don’t fill this out if you’re human:
-            <input name="bot-field" />
-          </label>
+      <div class="card card--flat">
+        <p class="mono" style="margin:0">
+          <strong>TRANSMISSION WARNING:</strong><br>
+          Subscribers receive restricted “files” first — dialogue fragments, tools, and sealed logs.<br>
+          No spoilers. Just signals.
         </p>
+      </div>
 
+      <p id="ok"  class="mono tiny hidden">ACCESS GRANTED. Check your inbox.</p>
+      <p id="err" class="mono tiny hidden" style="color: var(--danger)">TRANSMISSION FAILED. Please try again.</p>
+
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+      <form id="subscribeForm" class="subscribe__form"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSfbnR9pn613Ce-UmKsrE8a-qNe-m0gLaE-HwvhadySY0CfYAQ/formResponse"
+            method="POST" target="hidden_iframe">
         <div class="subscribe__row">
-          <input
-            type="email"
-            name="email"
-            placeholder="your@email.com"
-            required
-          />
-          <button type="submit" class="btn">
-            Request Access
-          </button>
+          <input type="email" name="entry.434112051" placeholder="your@email.com" required />
+          <button id="submitBtn" type="submit" class="btn">Request Access</button>
         </div>
 
         <label class="checkbox mono">
-          <input type="checkbox" required />
+          <input type="checkbox" name="entry.1579899643"
+                 value="I agree to receive Arcton Files transmissions" required />
           I agree to receive Arcton Files updates.
         </label>
 
-        <p id="subscribe-success" class="mono tiny hidden">
-          ACCESS GRANTED. Check your inbox.
-        </p>
+        <!-- Optional default first name -->
+        <input type="hidden" name="entry.2124893583" value="Recruit">
 
-        <p class="mono tiny muted">
-          ARCHON NOTICE: transmissions may be delayed by security protocols.
-        </p>
+        <!-- Harmless helpers for Forms -->
+        <input type="hidden" name="fvv" value="1">
+        <input type="hidden" name="pageHistory" value="0">
+        <input type="hidden" name="fbzx" value="-1">
       </form>
     </div>
   </div>
