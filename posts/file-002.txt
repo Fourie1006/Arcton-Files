@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>File 002 — ARCHON Symbol Flash</title>
+  <meta name="description" content="Arcton Files — File 002" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="/index.html#archive">
+        <span class="brand__sigil">◭</span>
+        <span class="brand__name">ARCTON FILES</span>
+        <span class="brand__tag">PUBLIC ACCESS</span>
+      </a>
+
+      <nav class="nav">
+        <a href="/index.html#archive">Archive</a>
+        <a href="/index.html#subscribe">Subscribe</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="archive">
+    <div class="wrap">
+      <div class="sectionhead">
+        <h2 class="mono">FILE 002 — ARCHON SYMBOL FLASH</h2>
+        <p class="muted mono">TYPE: Orientation Log • STATUS: Sanitised • CLEARANCE: Public</p>
+      </div>
+
+      <div class="card">
+        <p class="mono">
+          The Buddy pin is meant to be harmless.
+          <br><br>
+          A campus convenience. An adaptive schedule keeper. A cheerful little voice that knows your floor number and reminds you to drink water.
+          <br><br>
+          It pulses once when it’s activated—soft light, soft tone, soft language. The kind of thing that makes parents relax and students laugh.
+          <br><br>
+          But Elena notices something on the walk back from the quad.
+          <br><br>
+          Not the voice—she’s already used to that.
+          <br><br>
+          It’s the timing.
+          <br><br>
+          The pin flickers at the exact moment the campus lighting shifts into night protocol. A tiny stutter. A micro-delay. Less than a blink.
+          <br><br>
+          Most people would never see it.
+          <br><br>
+          Elena does.
+          <br><br>
+          She stops near a glass wall where the city reflects like a second sky. She turns the pin in her fingers. The matte surface is warm from her skin.
+          <br><br>
+          “Buddy,” she whispers, low enough that the air might pretend it didn’t hear. “Run my orientation checklist.”
+          <br><br>
+          The pin hums. A calm voice answers:
+          <br><br>
+          <em>“Acknowledged.”</em>
+          <br><br>
+          A thin holographic panel blooms above her collarbone—clean icons, sterile typography, harmless information.
+          <br><br>
+          Then it happens again.
+          <br><br>
+          A flicker.
+          <br><br>
+          The interface distorts for the briefest instant—like a screen remembering something it shouldn’t.
+          <br><br>
+          A symbol flashes.
+          <br><br>
+          White. Iris-shaped. Geometric.
+          <br><br>
+          Encased in a triangle.
+          <br><br>
+          Beneath it, one word appears and disappears too quickly to be “part of the UI.”
+          <br><br>
+          <strong>ARCHON.</strong>
+          <br><br>
+          Elena’s breath catches. The hologram collapses back into the pin as if it never existed.
+          <br><br>
+          The voice returns—pleasant, neutral, obedient:
+          <br><br>
+          <em>“Would you like to review your emotional profile, Elena?”</em>
+          <br><br>
+          She doesn’t answer.
+          <br><br>
+          She just stands there, heart beating too loud for a system that claims it only tracks schedules.
+          <br><br>
+          Because symbols don’t “accidentally” appear.
+          <br><br>
+          And names like ARCHON don’t belong to public tools.
+          <br><br>
+          Unless the tool isn’t public.
+          <br><br>
+          Unless it never was.
+          <br><br>
+          Elena looks up at the glass—at the reflection of the city, the campus lights, the hills beyond Arcton’s perimeter—
+          <br><br>
+          and for the first time since arriving, she feels it:
+          <br><br>
+          the sense that something is watching back.
+        </p>
+      </div>
+
+      <div style="height:16px"></div>
+
+      <div class="card card--flat">
+        <p class="mono" style="margin:0">
+          <strong>READER NOTE:</strong><br>
+          If you’re choosing a study path right now, start with the tools Elena used to map her options—self-assessment, career reality checks, and outreach templates.
+          <br><br>
+          <a class="tile__link" href="/resources/resource-001/">Open RESOURCE 001 →</a>
+        </p>
+      </div>
+
+      <div style="height:16px"></div>
+
+      <div class="hero__cta">
+        <a class="btn btn--ghost" href="/posts/file-001.html">← Previous File (001)</a>
+        <a class="btn" href="/index.html#subscribe">Request Access</a>
+      </div>
+
+      <div style="height:12px"></div>
+
+      <a class="btn btn--ghost" href="/index.html#archive">← Back to Archive</a>
+    </div>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>

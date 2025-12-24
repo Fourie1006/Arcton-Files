@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resource 001 — Pathfinding Tools</title>
+  <meta name="description" content="Arcton Files — Resource 001" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="/#archive">
+        <span class="brand__sigil">◭</span>
+        <span class="brand__name">ARCTON FILES</span>
+        <span class="brand__tag">PUBLIC ACCESS</span>
+      </a>
+
+      <nav class="nav">
+        <a href="/#archive">Archive</a>
+        <a href="/#subscribe">Subscribe</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="archive">
+    <div class="wrap">
+      <div class="sectionhead">
+        <h2 class="mono">RESOURCE 001 — PATHFINDING TOOLS</h2>
+        <p class="muted mono">COMPANION: FILE 001 • STATUS: Public Release • USE: Field-Ready</p>
+      </div>
+
+      <div class="card">
+        <div class="mono">
+          <p><strong>Purpose.</strong></p>
+          <p>
+            This resource is not designed to tell you what to become.
+            It is designed to help you reduce uncertainty with evidence.
+          </p>
+          <p>
+            Elena’s method was simple:
+            map tendencies → translate titles into reality → extract signal with better questions → speak to real people → test assumptions.
+          </p>
+          <p class="muted">
+            Follow the sequence in order. Skipping steps creates confident guesses. Not clarity.
+          </p>
+        </div>
+      </div>
+
+      <div style="height:16px"></div>
+
+      <div class="card">
+        <h3 class="mono" style="margin-top:0">SECTION A — SELF-ASSESSMENT (TRAIT-BASED FIRST)</h3>
+        <div class="mono">
+          <p class="muted">
+            Goal: generate hypotheses about environments that fit you before you attach yourself to a title.
+            You are not picking a forever-identity. You are mapping patterns.
+          </p>
+
+          <ul class="list">
+            <li>
+              <a class="tile__link" href="https://www.onetonline.org/" target="_blank" rel="noopener">O*NET Interest Profiler</a>
+              <br><span class="muted">Use this to identify interest themes (not “jobs”). Good for widening options you didn’t know existed.</span>
+            </li>
+            <li>
+              <a class="tile__link" href="https://www.viacharacter.org/" target="_blank" rel="noopener">VIA Character Strengths</a>
+              <br><span class="muted">Use this to name what you naturally lean on under pressure (strength patterns, not performance). Helpful for values-fit.</span>
+            </li>
+            <li>
+              <a class="tile__link" href="https://forms.gle/jAm5SMhk8xWhMUJZA" target="_blank" rel="noopener">OCEAN Survey — Arcton Public Release</a>
+              <br><span class="muted">Use this for trait-spectrum mapping. People move on a continuum. This avoids “type-boxing.”</span>
+            </li>
+          </ul>
+
+          <p><strong>Note on “type” tests.</strong><br>
+            They can be fun. They can be motivating. But they often lock you into categories.
+            If you want flexibility, focus on OCEAN-style traits: you move along a spectrum, not into a box.
+          </p>
+
+          <p class="muted">
+            Transition:
+            Once you’ve mapped tendencies, you can stop guessing which careers “sound right” and start checking which careers match your reality.
+          </p>
+        </div>
+      </div>
+
+      <div style="height:16px"></div>
+
+      <div class="card">
+        <h3 class="mono" style="margin-top:0">SECTION B — CAREER REALITY CHECK (WHAT THE JOB ACTUALLY IS)</h3>
+        <div class="mono">
+          <p class="muted">
+            Goal: convert a title into a day-to-day environment.
+            You are looking for: tasks, stressors, work settings, entry routes, and what beginners usually underestimate.
+          </p>
+
+          <ul class="list">
+            <li>
+              <a class="tile__link" href="https://www.careeronestop.org/" target="_blank" rel="noopener">CareerOneStop</a>
+              <br><span class="muted">Fast summaries + pathways. Useful for building an initial shortlist and seeing adjacent roles.</span>
+            </li>
+            <li>
+              <a class="tile__link" href="https://www.bls.gov/ooh/" target="_blank" rel="noopener">U.S. Bureau of Labor Statistics — OOH</a>
+              <br><span class="muted">Excellent for duties, work environment, typical education, and outlook. Even if you’re not in the U.S., it’s a strong baseline.</span>
+            </li>
+            <li>
+              <a class="tile__link" href="https://www.prospects.ac.uk/" target="_blank" rel="noopener">Prospects (UK)</a>
+              <br><span class="muted">Clear “is this for you” framing, entry routes, and practical expectations. Easy to understand without dumbing things down.</span>
+            </li>
+          </ul>
+
+          <p class="muted">
+            Transition:
+            Reading reduces ignorance. It does not create certainty.
+            Now you upgrade the quality of your questions so you can extract usable signal from search, video, AI, and real people.
+          </p>
+        </div>
+      </div>
+
+      <div style="height:16px"></div>
+
+      <div class="card">
+        <h3 class="mono" style="margin-top:0">SECTION C — COPY/PASTE PROMPTS (USE THESE)</h3>
+        <div class="mono">
+          <p class="muted">
+            Goal: force specificity.
+            Generic inputs produce generic outputs. Use these prompts to get clear, practical information you can compare across careers.
+          </p>
+
+          <p><strong>Prompt 1 — Weekly reality simulation</strong><br>
+            “You are a career advisor. Simulate a realistic week for a <strong>[JOB TITLE]</strong> in <strong>[COUNTRY]</strong>.
+            Break it down by day with typical tasks, meetings, deep work, admin, and unexpected interruptions.
+            Include: (1) the 3 biggest stressors, (2) what beginners struggle with, (3) what good performers do differently.”
+          </p>
+
+          <p><strong>Prompt 2 — Hidden workload and trade-offs</strong><br>
+            “Explain the hidden workload of being a <strong>[JOB TITLE]</strong>. Include the emotional load, decision fatigue, paperwork/admin,
+            stakeholder conflict, and the parts people romanticise incorrectly. Then list the trade-offs: what you gain and what you give up.”
+          </p>
+
+          <p><strong>Prompt 3 — Education + early testing plan</strong><br>
+            “For <strong>[COUNTRY]</strong>, map the most common education/training paths to become a <strong>[JOB TITLE]</strong>.
+            Include: required subjects, typical duration, approximate cost ranges (if known), and 5 low-cost ways to test interest in 30 days
+            (projects, volunteering, shadowing, short courses, communities).”
+          </p>
+
+          <p><strong>Prompt 4 — Fit analysis using traits</strong><br>
+            “Based on OCEAN traits, what kind of work environment suits someone high/low in each trait?
+            Then apply it: given the job <strong>[JOB TITLE]</strong>, explain which trait patterns might thrive and which might struggle,
+            and how someone could compensate.”
+          </p>
+
+          <p class="muted">
+            Transition:
+            At this point, you are ready for the step most people avoid: contact.
+            Not asking for a job. Asking for truth.
+          </p>
+        </div>
+      </div>
+
+      <div style="height:16px"></div>
+
+      <div class="card">
+        <h3 class="mono" style="margin-top:0">SECTION D — WARM OUTREACH TEMPLATE (INFO CHAT / SHADOWING)</h3>
+        <div class="mono">
+          <p class="muted">
+            Goal: get first-hand signal.
+            You are asking for 10 minutes of reality from someone who has already walked the path.
+          </p>
+
+          <p><strong>Subject:</strong> Quick question about your work as a <strong>[JOB TITLE]</strong></p>
+
+          <p>
+            Hi <strong>[NAME]</strong>,<br><br>
+            Hope you’re doing well. I’m currently exploring possible study and career paths, and your work as a <strong>[JOB TITLE]</strong> stood out.<br><br>
+            I’m trying to understand what the role actually looks like in real life, especially the parts people don’t see from the outside:
+            the day-to-day tasks, the skills that matter most, what you enjoy, and what’s tougher than expected.<br><br>
+            If you’re open to it, could I ask you <strong>5–10 quick questions</strong> over a short call, or even just by message/email?
+            No pressure at all — even a few bullet points would help massively.<br><br>
+            If it helps, I’m specifically curious about:<br>
+            • What a normal week looks like<br>
+            • What you wish you knew early on<br>
+            • Which skills matter most (and how you built them)<br>
+            • What someone like me could do in the next 30 days to test fit<br><br>
+            Either way, thank you for your time — and respect for the work you do.<br><br>
+            Best,<br>
+            <strong>[YOUR NAME]</strong><br>
+            <span class="muted">[SCHOOL / CITY] • [OPTIONAL: 1–2 RELEVANT SKILLS/INTERESTS]</span>
+          </p>
+
+          <p class="muted">
+            Optional: replace the last line with a personal hook:
+            “I’m trying to build evidence before committing years to a path.”
+          </p>
+        </div>
+      </div>
+
+      <div style="height:16px"></div>
+
+      <!-- End CTA: Subscribe + Next File -->
+      <div class="about__grid">
+        <div class="card subscribe__card">
+          <h3 class="mono" style="margin-top:0">Continue Receiving Recovered Files</h3>
+          <p class="muted mono">
+            New fragments, tools, and sealed logs are released intermittently. No spoilers. Just signals.
+          </p>
+
+          <form
+            name="arcton-subscribe"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            id="subscribe-form"
+          >
+            <input type="hidden" name="form-name" value="arcton-subscribe" />
+
+            <p class="hidden">
+              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+            </p>
+
+            <div class="subscribe__row">
+              <input type="email" name="email" placeholder="your@email.com" required />
+              <button type="submit" class="btn">Request Access</button>
+            </div>
+
+            <label class="checkbox mono">
+              <input type="checkbox" required />
+              I agree to receive Arcton Files updates.
+            </label>
+
+            <p id="subscribe-success" class="mono tiny hidden">
+              ACCESS GRANTED. Check your inbox.
+            </p>
+
+            <p class="mono tiny muted">
+              ARCHON NOTICE: transmissions may be delayed by security protocols.
+            </p>
+          </form>
+        </div>
+
+        <div class="card card--flat">
+          <h3 class="mono" style="margin-top:0">Next</h3>
+          <p class="mono" style="margin:0 0 10px 0">
+            <strong>FILE 002 — ARCHON SYMBOL FLASH</strong><br>
+            A harmless object glitches. A symbol appears. One word persists.
+          </p>
+          <a class="btn" href="/posts/file-002.html">Open File 002 →</a>
+
+          <div style="height:10px"></div>
+          <a class="btn btn--ghost" href="/posts/file-001.html">← Back to File 001</a>
+        </div>
+      </div>
+
+      <div style="height:16px"></div>
+
+      <a class="btn btn--ghost" href="/#archive">← Back to Archive</a>
+    </div>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
