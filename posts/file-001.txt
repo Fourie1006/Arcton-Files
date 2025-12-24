@@ -223,7 +223,11 @@
 
       <div style="height:16px"></div>
 
-      <a class="btn btn--ghost" href="/#archive">← Back to Archive</a>
+      <div class="hero__cta">
+  <a class="btn btn--ghost" href="/index.html#archive">← Back to Archive</a>
+  <a class="btn btn--ghost" href="/resources/resource-001/">RESOURCE 001 →</a>
+  <a class="btn" href="/posts/file-002.html">Next File (002) →</a>
+</div>
     </div>
   </main>
 
